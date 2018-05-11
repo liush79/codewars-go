@@ -5,7 +5,10 @@ import (
 )
 
 func combat(health, damage float64) float64 {
-	return 50.0
+	if health < damage {
+		return 0
+	}
+	return health - damage
 }
 
 func main() {
