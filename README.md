@@ -1,11 +1,11 @@
 ##### TEST
 ```shell script
-# A specific test
-go test ./8kyu/mumbling
+# A specific one test
+go test -v ./8kyu/sum_of_positive_test.go
 
 # 8kyu entire tests
-go test ./8kyu/...
+go test -v ./8kyu/...
 
 # All tests
-go test ./...
+go test -v ./...
 ```
