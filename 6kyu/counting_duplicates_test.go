@@ -6,6 +6,9 @@ import (
 	"testing"
 )
 
+
+// 조금만 더 생각해봐라
+// for 문 한번으로도 가능하다
 func duplicate_count(s1 string) (res int) {
 	m := map[int32]int{}
 	for _, s := range strings.ToLower(s1) {
