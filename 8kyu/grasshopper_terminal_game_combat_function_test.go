@@ -1,7 +1,8 @@
 package _kyu
 
 import (
-	"fmt"
+	"github.com/stretchr/testify/assert"
+	"testing"
 )
 
 func combat(health, damage float64) float64 {
@@ -11,6 +12,6 @@ func combat(health, damage float64) float64 {
 	return health - damage
 }
 
-func main() {
-	fmt.Println(combat(100.0, 50.0))
+func TestGrasshopper(t *testing.T) {
+	assert.Equal(t, combat(100.0, 50.0), 50.0)
 }
