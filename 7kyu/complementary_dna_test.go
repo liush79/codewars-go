@@ -1,4 +1,4 @@
-package _kyu
+package kata
 
 import (
 	"github.com/stretchr/testify/assert"
