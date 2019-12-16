@@ -24,7 +24,7 @@ func Is_valid_ip(ip string) bool {
 	}
 	return true
 }
-func TestTmp(t *testing.T) {
+func TestIpValidation(t *testing.T) {
 	assert.Equal(t, Is_valid_ip("12.255.56.1"),true)
 	assert.Equal(t, Is_valid_ip(""),false)
 	assert.Equal(t, Is_valid_ip("abc.def.ghi.jkl"),false)
